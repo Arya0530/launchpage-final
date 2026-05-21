@@ -1,6 +1,7 @@
-import SotoMiniWeb from './portfolio/SotoMiniWeb';
-import BoranMiniWeb from './portfolio/BoranMiniWeb';
-import WingkoMiniWeb from './portfolio/WingkoMiniWeb';
+// GANTI BARIS 2 SAMPAI 4 DI components/Portfolio.tsx JADI INI:
+import SotoMiniWeb from './SotoMiniWeb';
+import BoranMiniWeb from './BoranMiniWeb';
+import WingkoMiniWeb from './WingkoMiniWeb';
 
 export default function Portfolio() {
   return (
@@ -15,7 +16,7 @@ export default function Portfolio() {
           {/* Card 1 – Soto Lamongan */}
           <div className="bg-white rounded-[2rem] shadow-[0_8px_30px_-4px_rgba(0,0,0,0.06)] border border-slate-100 overflow-hidden flex flex-col group hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.12)] transition-shadow duration-300">
             
-            {/* LINK DINAMIS: Otomatis mengarah ke halaman internal /soto di hostingan yang sama */}
+            {/* LINK DINAMIS RELATIVE PATH */}
             <a 
               href="/soto" 
               target="_blank" 
@@ -34,7 +35,7 @@ export default function Portfolio() {
                 </div>
               </div>
               
-              {/* Draft Website Mini Soto (Bisa di-scroll & ada foto produk) */}
+              {/* Draft Website Mini Soto */}
               <SotoMiniWeb />
             </a>
 
@@ -58,7 +59,7 @@ export default function Portfolio() {
           {/* Card 2 – Nasi Boran */}
           <div className="bg-white rounded-[2rem] shadow-[0_8px_30px_-4px_rgba(0,0,0,0.06)] border border-slate-100 overflow-hidden flex flex-col group hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.12)] transition-shadow duration-300">
             
-            {/* LINK DINAMIS: Otomatis mengarah ke halaman internal /boran di hostingan yang sama */}
+            {/* LINK DINAMIS RELATIVE PATH */}
             <a 
               href="/boran" 
               target="_blank" 
@@ -101,7 +102,7 @@ export default function Portfolio() {
           {/* Card 3 – Wingko Babat */}
           <div className="bg-white rounded-[2rem] shadow-[0_8px_30px_-4px_rgba(0,0,0,0.06)] border border-slate-100 overflow-hidden flex flex-col group hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.12)] transition-shadow duration-300">
             
-            {/* LINK DINAMIS: Otomatis mengarah ke halaman internal /wingko di hostingan yang sama */}
+            {/* LINK DINAMIS RELATIVE PATH */}
             <a 
               href="/wingko" 
               target="_blank" 
