@@ -15,9 +15,9 @@ export default function Portfolio() {
           {/* Card 1 – Soto Lamongan */}
           <div className="bg-white rounded-[2rem] shadow-[0_8px_30px_-4px_rgba(0,0,0,0.06)] border border-slate-100 overflow-hidden flex flex-col group hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.12)] transition-shadow duration-300">
             
-            {/* LINK WRAPPER: Klik kotak browser untuk pindah ke website asli */}
+            {/* LINK DINAMIS: Otomatis mengarah ke halaman internal /soto di hostingan yang sama */}
             <a 
-              href="https://sotolamongan-pakbejo.vercel.app" // <-- Ganti pakai link Vercel website soto lo yang asli
+              href="/soto" 
               target="_blank" 
               rel="noopener noreferrer"
               className="block p-3 pb-0 bg-slate-50 border-b border-slate-100 cursor-pointer group/browser"
@@ -34,7 +34,7 @@ export default function Portfolio() {
                 </div>
               </div>
               
-              {/* Draft Website Mini Soto (Bisa di-scroll & ada 3 foto) */}
+              {/* Draft Website Mini Soto (Bisa di-scroll & ada foto produk) */}
               <SotoMiniWeb />
             </a>
 
@@ -58,9 +58,9 @@ export default function Portfolio() {
           {/* Card 2 – Nasi Boran */}
           <div className="bg-white rounded-[2rem] shadow-[0_8px_30px_-4px_rgba(0,0,0,0.06)] border border-slate-100 overflow-hidden flex flex-col group hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.12)] transition-shadow duration-300">
             
-            {/* LINK WRAPPER: Klik kotak browser untuk pindah ke website asli */}
+            {/* LINK DINAMIS: Otomatis mengarah ke halaman internal /boran di hostingan yang sama */}
             <a 
-              href="https://nasiboran-buatun.vercel.app" // <-- Ganti pakai link Vercel website boran lo yang asli
+              href="/boran" 
               target="_blank" 
               rel="noopener noreferrer"
               className="block p-3 pb-0 bg-slate-50 border-b border-slate-100 cursor-pointer group/browser"
@@ -73,7 +73,7 @@ export default function Portfolio() {
                   <span className="h-2.5 w-2.5 rounded-full bg-emerald-400 block"></span>
                 </div>
                 <div className="flex-1 max-w-[140px] mx-auto bg-slate-50 rounded text-[10px] text-slate-400 py-0.5 px-2 text-center truncate border border-slate-100 select-none group-hover/browser:text-blue-600 group-hover/browser:bg-blue-50/50 transition-all font-medium">
-                  nasiboran-buatun.id ↗
+                  nasiboran-busari.id ↗
                 </div>
               </div>
               
@@ -84,7 +84,7 @@ export default function Portfolio() {
             {/* Konten Teks Deskripsi */}
             <div className="p-8 flex-1 flex flex-col">
               <p className="text-blue-600 text-xs font-bold uppercase tracking-wider mb-2">UMKM Landing Page</p>
-              <h3 className="text-xl font-extrabold text-slate-900 mb-2">Nasi Boran Bu Atun</h3>
+              <h3 className="text-xl font-extrabold text-slate-900 mb-2">Nasi Boran Bu Sari</h3>
               <p className="text-slate-500 text-sm mb-6 flex-1">
                 Membangun *brand awareness* kuliner khas melalui landing page interaktif yang menceritakan sejarah rasa hingga lokasi cabang.
               </p>
@@ -101,9 +101,9 @@ export default function Portfolio() {
           {/* Card 3 – Wingko Babat */}
           <div className="bg-white rounded-[2rem] shadow-[0_8px_30px_-4px_rgba(0,0,0,0.06)] border border-slate-100 overflow-hidden flex flex-col group hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.12)] transition-shadow duration-300">
             
-            {/* LINK WRAPPER: Klik kotak browser untuk pindah ke website asli */}
+            {/* LINK DINAMIS: Otomatis mengarah ke halaman internal /wingko di hostingan yang sama */}
             <a 
-              href="https://wingkobabat-premium.vercel.app" // <-- Ganti pakai link Vercel website wingko lo yang asli
+              href="/wingko" 
               target="_blank" 
               rel="noopener noreferrer"
               className="block p-3 pb-0 bg-slate-50 border-b border-slate-100 cursor-pointer group/browser"
