@@ -1,3 +1,7 @@
+import SotoMiniWeb from './portfolio/SotoMiniWeb';
+import BoranMiniWeb from './portfolio/BoranMiniWeb';
+import WingkoMiniWeb from './portfolio/WingkoMiniWeb';
+
 export default function Portfolio() {
   return (
     <section id="portofolio" className="py-24 bg-white px-4 sm:px-6">
@@ -8,78 +12,129 @@ export default function Portfolio() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-          {/* Card 1 – Anther Cafe */}
+          {/* Card 1 – Soto Lamongan */}
           <div className="bg-white rounded-[2rem] shadow-[0_8px_30px_-4px_rgba(0,0,0,0.06)] border border-slate-100 overflow-hidden flex flex-col group hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-            {/* Foto Dummy Unsplash - Cafe/Coffee */}
-            <div className="h-56 w-full relative overflow-hidden bg-slate-100">
-              <img 
-                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Aether Cafe Web App" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
+            
+            {/* LINK WRAPPER: Klik kotak browser untuk pindah ke website asli */}
+            <a 
+              href="https://sotolamongan-pakbejo.vercel.app" // <-- Ganti pakai link Vercel website soto lo yang asli
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block p-3 pb-0 bg-slate-50 border-b border-slate-100 cursor-pointer group/browser"
+            >
+              {/* Header Jendela Browser */}
+              <div className="flex items-center gap-2 bg-white rounded-t-xl px-4 py-2.5 border border-b-0 border-slate-200/60 group-hover/browser:border-slate-300 transition-colors">
+                <div className="flex gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-full bg-rose-400 block"></span>
+                  <span className="h-2.5 w-2.5 rounded-full bg-amber-400 block"></span>
+                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-400 block"></span>
+                </div>
+                <div className="flex-1 max-w-[140px] mx-auto bg-slate-50 rounded text-[10px] text-slate-400 py-0.5 px-2 text-center truncate border border-slate-100 select-none group-hover/browser:text-blue-600 group-hover/browser:bg-blue-50/50 transition-all font-medium">
+                  sotolamongan.com ↗
+                </div>
+              </div>
+              
+              {/* Draft Website Mini Soto (Bisa di-scroll & ada 3 foto) */}
+              <SotoMiniWeb />
+            </a>
+
+            {/* Konten Teks Deskripsi */}
             <div className="p-8 flex-1 flex flex-col">
-              <p className="text-blue-600 text-xs font-bold uppercase tracking-wider mb-2">Web App & UI/UX</p>
-              <h3 className="text-xl font-extrabold text-slate-900 mb-2">Anther Cafe Web App</h3>
+              <p className="text-blue-600 text-xs font-bold uppercase tracking-wider mb-2">E-Commerce & Digital Menu</p>
+              <h3 className="text-xl font-extrabold text-slate-900 mb-2">Soto Lamongan Pak Bejo</h3>
               <p className="text-slate-500 text-sm mb-6 flex-1">
-                Membangun website digital dan platform pemesanan untuk kenyamanan dan efisiensi pelanggan.
+                Modernisasi warung soto legendaris lewat sistem manajemen menu digital dan pesan-antar online untuk memangkas antrean.
               </p>
               <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
                 <div>
                   <p className="text-slate-400 text-xs font-medium mb-0.5">IMPACT</p>
-                  <p className="text-slate-900 font-bold text-sm">40% Conversion Increase</p>
+                  <p className="text-slate-900 font-bold text-sm">150+ Pesanan/Hari Online</p>
                 </div>
                 <div className="w-8 h-8 rounded-full bg-green-50 flex items-center justify-center text-green-600 text-xs font-black">↑</div>
               </div>
             </div>
           </div>
 
-          {/* Card 2 – Novatech */}
+          {/* Card 2 – Nasi Boran */}
           <div className="bg-white rounded-[2rem] shadow-[0_8px_30px_-4px_rgba(0,0,0,0.06)] border border-slate-100 overflow-hidden flex flex-col group hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-            {/* Foto Dummy Unsplash - Tech Startup/Meeting */}
-            <div className="h-56 w-full relative overflow-hidden bg-slate-100">
-              <img 
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Novatech Innovations" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
+            
+            {/* LINK WRAPPER: Klik kotak browser untuk pindah ke website asli */}
+            <a 
+              href="https://nasiboran-buatun.vercel.app" // <-- Ganti pakai link Vercel website boran lo yang asli
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block p-3 pb-0 bg-slate-50 border-b border-slate-100 cursor-pointer group/browser"
+            >
+              {/* Header Jendela Browser */}
+              <div className="flex items-center gap-2 bg-white rounded-t-xl px-4 py-2.5 border border-b-0 border-slate-200/60 group-hover/browser:border-slate-300 transition-colors">
+                <div className="flex gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-full bg-rose-400 block"></span>
+                  <span className="h-2.5 w-2.5 rounded-full bg-amber-400 block"></span>
+                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-400 block"></span>
+                </div>
+                <div className="flex-1 max-w-[140px] mx-auto bg-slate-50 rounded text-[10px] text-slate-400 py-0.5 px-2 text-center truncate border border-slate-100 select-none group-hover/browser:text-blue-600 group-hover/browser:bg-blue-50/50 transition-all font-medium">
+                  nasiboran-buatun.id ↗
+                </div>
+              </div>
+              
+              {/* Draft Website Mini Nasi Boran */}
+              <BoranMiniWeb />
+            </a>
+
+            {/* Konten Teks Deskripsi */}
             <div className="p-8 flex-1 flex flex-col">
-              <p className="text-blue-600 text-xs font-bold uppercase tracking-wider mb-2">Corporate Landing</p>
-              <h3 className="text-xl font-extrabold text-slate-900 mb-2">Novatech Innovations</h3>
+              <p className="text-blue-600 text-xs font-bold uppercase tracking-wider mb-2">UMKM Landing Page</p>
+              <h3 className="text-xl font-extrabold text-slate-900 mb-2">Nasi Boran Bu Atun</h3>
               <p className="text-slate-500 text-sm mb-6 flex-1">
-                Membantu portal tech B2B mendapatkan leads melalui desain web konversi tinggi.
+                Membangun *brand awareness* kuliner khas melalui landing page interaktif yang menceritakan sejarah rasa hingga lokasi cabang.
               </p>
               <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
                 <div>
                   <p className="text-slate-400 text-xs font-medium mb-0.5">IMPACT</p>
-                  <p className="text-slate-900 font-bold text-sm">75k+ Leads Generated</p>
+                  <p className="text-slate-900 font-bold text-sm">Omset Naik 45%</p>
                 </div>
                 <div className="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 text-xs font-black">↑</div>
               </div>
             </div>
           </div>
 
-          {/* Card 3 – Chic Thread */}
+          {/* Card 3 – Wingko Babat */}
           <div className="bg-white rounded-[2rem] shadow-[0_8px_30px_-4px_rgba(0,0,0,0.06)] border border-slate-100 overflow-hidden flex flex-col group hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.12)] transition-shadow duration-300">
-            {/* Foto Dummy Unsplash - Ecommerce/Fashion/Laptop */}
-            <div className="h-56 w-full relative overflow-hidden bg-slate-100">
-              <img 
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Chic Thread Co." 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
+            
+            {/* LINK WRAPPER: Klik kotak browser untuk pindah ke website asli */}
+            <a 
+              href="https://wingkobabat-premium.vercel.app" // <-- Ganti pakai link Vercel website wingko lo yang asli
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block p-3 pb-0 bg-slate-50 border-b border-slate-100 cursor-pointer group/browser"
+            >
+              {/* Header Jendela Browser */}
+              <div className="flex items-center gap-2 bg-white rounded-t-xl px-4 py-2.5 border border-b-0 border-slate-200/60 group-hover/browser:border-slate-300 transition-colors">
+                <div className="flex gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-full bg-rose-400 block"></span>
+                  <span className="h-2.5 w-2.5 rounded-full bg-amber-400 block"></span>
+                  <span className="h-2.5 w-2.5 rounded-full bg-emerald-400 block"></span>
+                </div>
+                <div className="flex-1 max-w-[140px] mx-auto bg-slate-50 rounded text-[10px] text-slate-400 py-0.5 px-2 text-center truncate border border-slate-100 select-none group-hover/browser:text-blue-600 group-hover/browser:bg-blue-50/50 transition-all font-medium">
+                  wingkobabat.com ↗
+                </div>
+              </div>
+              
+              {/* Draft Website Mini Wingko Babat */}
+              <WingkoMiniWeb />
+            </a>
+
+            {/* Konten Teks Deskripsi */}
             <div className="p-8 flex-1 flex flex-col">
-              <p className="text-blue-600 text-xs font-bold uppercase tracking-wider mb-2">E-Commerce UI</p>
-              <h3 className="text-xl font-extrabold text-slate-900 mb-2">Chic Thread Co.</h3>
+              <p className="text-blue-600 text-xs font-bold uppercase tracking-wider mb-2">E-Commerce Website</p>
+              <h3 className="text-xl font-extrabold text-slate-900 mb-2">Wingko Babat Loe Lan Ing</h3>
               <p className="text-slate-500 text-sm mb-6 flex-1">
-                Meningkatkan retensi dan sales melalui re-desain arsitektur informasi website.
+                Pengembangan toko online dengan integrasi cek ongkir otomatis untuk memudahkan pengiriman oleh-oleh ke seluruh Indonesia.
               </p>
               <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
                 <div>
                   <p className="text-slate-400 text-xs font-medium mb-0.5">IMPACT</p>
-                  <p className="text-slate-900 font-bold text-sm">Seamless Mobile UX</p>
+                  <p className="text-slate-900 font-bold text-sm">Seamless Nasional Shipping</p>
                 </div>
                 <div className="w-8 h-8 rounded-full bg-rose-50 flex items-center justify-center text-rose-500 text-xs font-black">✓</div>
               </div>
