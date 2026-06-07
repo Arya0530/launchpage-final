@@ -19,8 +19,8 @@ export default function Pricing() {
               <p className="text-slate-500 text-sm mt-2 mb-6">Cocok untuk UMKM yang baru mulai go digital</p>
               
               <div className="flex flex-col mb-6">
-                <span className="text-sm text-slate-400 line-through">Rp 500.000</span>
-                <span className="text-4xl font-black text-slate-900 tracking-tight">Rp 250<span className="text-2xl text-slate-400 font-bold">.000</span></span>
+                <span className="text-sm text-slate-400 line-through">Rp 250.000</span>
+                <span className="text-4xl font-black text-slate-900 tracking-tight">Rp 50<span className="text-2xl text-slate-400 font-bold">.000</span></span>
               </div>
 
               <p className="text-xs text-slate-400 font-medium mb-4 uppercase tracking-wider">Yang kamu dapat:</p>
@@ -50,8 +50,8 @@ export default function Pricing() {
               <p className="text-slate-500 text-sm mt-2 mb-6">Investasi terbaik untuk bisnis yang serius</p>
               
               <div className="flex flex-col mb-6">
-                <span className="text-sm text-slate-400 line-through">Rp 1.200.000</span>
-                <span className="text-4xl font-black text-blue-600 tracking-tight">Rp 750<span className="text-2xl text-blue-400 font-bold">.000</span></span>
+                <span className="text-sm text-slate-400 line-through">Rp 200.000</span>
+                <span className="text-4xl font-black text-blue-600 tracking-tight">Rp 100.000<span className="text-2xl text-blue-400 font-bold">.000</span></span>
               </div>
 
               <p className="text-xs text-slate-400 font-medium mb-4 uppercase tracking-wider">Semua Paket Hemat, plus:</p>
